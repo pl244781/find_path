@@ -79,7 +79,7 @@ def FindPath(img_name):
 
     print(points)
 
-    for i in range(len(points)-1):
+    for i in range(len(points)-2):
         if i != 3 and i != 4 and i != 5:
             cv.arrowedLine(img, (points[i][0], points[i][1]), (points[i+1][0], points[i+1][1]), (0, 0, 0), 3, cv.LINE_AA)
         elif i == 3:
